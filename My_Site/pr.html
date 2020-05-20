@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Landing Page</title>
+    <link rel="stylesheet" href="pr.css">
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello World,<br>I'm <span>Kartavya Verma</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. eum veniam deserunt, corrupti cumque unde nulla nostrum natus harum tempore soluta placeat id quos architecto excepturi maxime. Fugiat Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, enim?<br>"You are self capable for doing all the great things, just be selfish. Don't wait for the approval of others because you are the best you are the one who understands every single piece of emotion and strength of yourself"
+            </p>
+            <a href="#">Know More</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="linkedin.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec=document.getElementById('sec');
+            var nav=document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
