@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blur Effect</title>
+    <link rel="stylesheet" href="blur.css">
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="content">
+            <h2>Selena Gomez ipsum dolor sit amet consectetur adipisicing elit. Maxime odio magni beatae iusto consequuntur ab at accusamus mollitia, temporibus officia distinctio asperiores corporis.</h2>
+            <img src="blur.jpg">
+            <a href="#" onclick="toggle()">Read More</a>
+        </div>
+    </div>
+    <div id="popup">
+        <h2>Selena quia officiis sapiente suscipit perspiciatis, accusamus veritatis adipisci aliquam et dicta nesciun.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsa dolore, itaque laudantium, nulla dicta asperiores cum saepe atque delectus sit odit molestiae porro doloribus at iusto quaerat incidunt assumenda repellat voluptates nostrum rerum provident.</p>
+        <a href="#" onclick="toggle()">Close</a>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var blur=document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup=document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+
+    </script>
+</body>
+</html>
